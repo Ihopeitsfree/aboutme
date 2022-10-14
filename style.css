@@ -157,6 +157,7 @@ opacity: 1;
     bottom: -320px; 
     left: -50px;
     width: 270px;
+    min-width: 270px;
     padding: 15px 15px 15px 15px;
     border: 1px smooth grey;
     border-radius: 3%;
