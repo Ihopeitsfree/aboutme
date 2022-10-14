@@ -1,0 +1,222 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+
+  body
+  {
+    background: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+    max-width: calc(100vw - 10px);
+    font-family: 'Fuzzy Bubbles';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.picture-container
+{
+    position: relative;
+    height: 500px;
+    width: 200px;
+}
+
+.picture-container .polaroid
+{
+    position: absolute;
+    border: 1px smooth darkgrey;
+    background-color: white;
+    padding: 15px 15px 60px 15px;
+    box-shadow: 5px 10px 10px rgb(41, 40, 40);
+}
+
+.picture-container .polaroid:after
+{
+content: attr(polaroid-caption);
+position: absolute;
+bottom: 0px;
+left: 0px;
+width: calc(100% - 20px);
+padding: 10px;
+font-size: 30px;
+text-align: center;
+}
+
+.picture-container .selfie
+{
+    left: 100px;
+    top: 100px;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    display: block;
+}
+
+.image_overlay_selfie 
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(158, 153, 153, 0.6);
+color: #1d0204;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+opacity: 0;
+transition: opacity 0.25;
+backdrop-filter: blur(5px);
+font-weight: bold;
+}
+
+.picture-container .happy-place
+{
+    left: 400px;
+    top: 100px;
+    transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    display: block;
+}
+
+.image_overlay_happy-place
+{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background: rgba(158, 153, 153, 0.6);
+color: #1d0204;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+opacity: 0;
+transition: opacity 0.25;
+backdrop-filter: blur(5px);
+font-weight: bold;
+}
+
+.image_overlay_selfie > * 
+{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image_overlay_selfie:hover 
+ {
+opacity: 1;
+}
+
+.image_overlay_selfie:hover > *
+{
+    transform: translateY(0);
+}
+
+.image_title_rolam, .image_title_happy-place
+{
+font-size: 2em;
+font-weight: bold; 
+}
+
+.image_desciption_rolam, .image_desciption_happy-place
+{
+    margin-top: 0.25em;
+    margin-left: 2em;
+}
+
+.image_overlay_happy-place > *
+{
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image_overlay_happy-place:hover 
+ {
+opacity: 1;
+}
+
+.image_overlay_happy-place:hover > *
+{
+    transform: translateY(0);
+}
+
+.business-card 
+{
+    position: relative;
+    bottom: -320px; 
+    width: 270px;
+    padding: 15px 15px 15px 15px;
+    border: 1px smooth grey;
+    border-radius: 3%;
+    box-shadow: 3px 5px 8px  rgb(39, 38, 38);
+    background: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcm01MDktYmFja2dyb3VuZC0wMjItbDEzNXFsNWwuanBn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-me
+{
+    color: #9b575c;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+    font-family: 'Work Sans';
+    font-weight: 200;
+    
+}
+
+h1, h2, p
+ {
+    position: relative;
+ }
+
+h1 
+{
+  margin-bottom: 0.25em;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+h2 
+{
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+p 
+{
+ text-align: left;
+ margin-left: 0px;
+}
+
+ul 
+{
+    list-style-type: none;
+}
+  
+li
+{
+    display: inline;
+}
+
+i, li, ul 
+{
+    transition: all .3s ease-in-out;
+    position: relative;
+    right: -65px; 
+}
+  i:hover 
+{
+color: #9b575c;
+transform: scale(2.0);
+}
