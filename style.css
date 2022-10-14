@@ -52,7 +52,6 @@ text-align: center;
 
 .picture-container .selfie
 {
-    left: 100px;
     top: 100px;
     transform: rotate(-20deg);
     -ms-transform: rotate(-20deg);
@@ -81,7 +80,7 @@ font-weight: bold;
 
 .picture-container .happy-place
 {
-    left: 400px;
+    left: 300px;
     top: 100px;
     transform: rotate(20deg);
     -ms-transform: rotate(20deg);
@@ -156,6 +155,7 @@ opacity: 1;
 {
     position: relative;
     bottom: -320px; 
+    left: -50px;
     width: 270px;
     padding: 15px 15px 15px 15px;
     border: 1px smooth grey;
@@ -215,8 +215,14 @@ i, li, ul
     position: relative;
     right: -65px; 
 }
+
   i:hover 
 {
 color: #9b575c;
 transform: scale(2.0);
+}
+
+a
+{
+color: #9b575c;
 }
